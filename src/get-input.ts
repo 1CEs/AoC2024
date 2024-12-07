@@ -1,6 +1,6 @@
-export const getInput = async (): Promise<string | undefined> => {
+export const getInput = async (day: string): Promise<string | undefined> => {
     try {
-        const res = await fetch('https://adventofcode.com/2024/day/1/input', {
+        const res = await fetch(`https://adventofcode.com/2024/day/${day}/input`, {
             headers: {
                 "cookie": process.env.COOKIE!
             }

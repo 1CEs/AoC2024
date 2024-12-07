@@ -1,11 +1,11 @@
-import { getInput } from "../get-input"
+import { getInput } from "../../get-input"
 
 ( async () => await main())()
 
 
 async function main() {
     try {
-        const input = await getInput() as string
+        const input = await getInput("1") as string
 
         let leftList: number[] = [], hashMap: Record<string, number> = {}
 
